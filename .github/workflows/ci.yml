@@ -1,0 +1,28 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: [16.x]
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node_version }}
+      - run: echo ${{github.ref}}
+      - run: pnpm run build
+      - run: pnpm run test
+        env:
+          CI: true
+          PROGRESS: none
+          NODE_ENV: test
+          NODE_OPTIONS: --max_old_space_size=4096

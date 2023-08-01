@@ -1,0 +1,129 @@
+{
+  "name": "@aileen/hooks",
+  "version": "0.0.1",
+  "description": "@aileen/hooks is a custom Hooks library for React, designed to provide a convenient and easy-to-use set of Hooks tailored for various scenarios. This library encompasses a range of common frontend request operations, including Axios, Puppeteer, Fetch, Request, and more, to facilitate efficient handling of network requests and browser interactions.。@aileen/hooks 是一个基于 React 的自定义 Hooks 库，旨在提供一套方便、易用的针对不同场景的 Hooks 封装。该库涵盖了多种常见的前端请求操作，包括 Axios、Puppeteer、Fetch、Request 等，以帮助开发者更高效地处理网络请求和浏览器操作",
+  "keywords": [
+    "@aileen/hooks",
+    "@aileen",
+    "hooks",
+    "react",
+    "react-hooks",
+    "react-library",
+    "react-component",
+    "react-components",
+    "react-component-library"
+  ],
+  "homepage": "https://github.com/h7ml/hooks",
+  "bugs": {
+    "url": "https://github.com/h7ml/hooks/issues/new"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/h7ml/hooks.git"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "h7ml",
+    "github": "https://github.com/h7ml",
+    "mail": "h7ml@qq.com"
+  },
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "jsdelivr": "lib/index.js",
+  "unpkg": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "changelog": "conventional-changelog -n node_modules/conventional-changelog-gitmoji-config -i CHANGELOG.md -s -r 0",
+    "ci": "npm run lint && npm run type-check && npm run doctor && npm run build",
+    "clean": "rm -rf es lib dist coverage .dumi/tmp .eslintcache",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install && npm run setup",
+    "prepublishOnly": "npm run doctor && npm run build",
+    "prettier": "prettier -c --write \"**/**\"",
+    "release": "semantic-release",
+    "setup": "dumi setup",
+    "start": "dumi dev",
+    "test": "vitest --passWithNoTests",
+    "test:coverage": "vitest run --coverage --passWithNoTests",
+    "test:update": "vitest -u",
+    "type-check": "tsc -p tsconfig-check.json",
+    "updates": "ncu -u && pnpm install"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@testing-library/react": "^14",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "@umijs/lint": "^4.0.73",
+    "@vitest/coverage-v8": "latest",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17",
+    "commitlint-config-gitmoji": "^2",
+    "concurrently": "^7",
+    "conventional-changelog-gitmoji-config": "^1",
+    "cross-env": "^7",
+    "cz-git": "^1.7.0",
+    "dumi": "^2.2.4",
+    "dumi-theme-antd-style": "latest",
+    "eslint": "^8.46.0",
+    "father": "^4.3.0",
+    "husky": "^8.0.3",
+    "jsdom": "^22",
+    "lint-staged": "^13.2.3",
+    "npm-check-updates": "^16.10.17",
+    "prettier": "^3.0.0",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "semantic-release": "^21",
+    "semantic-release-config-gitmoji": "^1",
+    "stylelint": "^15.10.2",
+    "typescript": "^5",
+    "vitest": "latest"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org",
+    "tag": "latest"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/h7ml/hooks/tree/main/LICENSE"
+    }
+  ]
+}

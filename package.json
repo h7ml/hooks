@@ -88,7 +88,7 @@
     "commitizen": "^4.3.0",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2",
-    "concurrently": "^7",
+    "concurrently": "^8",
     "conventional-changelog-gitmoji-config": "^1",
     "cross-env": "^7",
     "cz-git": "^1.7.0",

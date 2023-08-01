@@ -1,5 +1,5 @@
 import { Foo } from '@aileen/hooks';
 
-test('hello', () => {
-  expect(Foo).toBeTruthy();
+test('Foo component is defined', () => {
+  expect(Foo).toBeDefined();
 });

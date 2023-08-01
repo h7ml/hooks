@@ -8,18 +8,37 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+
     strategy:
       matrix:
-        node_version: [16.x]
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [14.x, 16.x, 17.x, 18.x, 19.x, 20.x]
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+
+      - name: Cache dependencies 📦
+        uses: actions/cache@v2
         with:
-          node-version: ${{ matrix.node_version }}
-      - run: echo ${{github.ref}}
-      - run: pnpm run build
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('packages/core/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
+
+      - name: Use Node.js ${{ matrix.node-version }} 🚀
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install pnpm 🚀
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: false
+
+      - name: Install dependencies 🚀
+        run: pnpm install
+
+      - name: test ✨
       - run: pnpm run test
         env:
           CI: true

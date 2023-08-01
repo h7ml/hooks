@@ -1,9 +1,9 @@
 name: notfoundbot
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: '0 5 * * *'
 jobs:
-  check:
+  notfoundbot:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

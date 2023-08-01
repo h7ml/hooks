@@ -1,4 +1,4 @@
-name: Node CI
+name: ci
 
 on:
   push:
@@ -6,13 +6,13 @@ on:
       - master
 
 jobs:
-  build:
+  test:
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        node-version: [14.x, 16.x, 18.x, 19.x, 20.x]
+        node-version: [16.x, 18.x, 19.x, 20.x]
     steps:
       - uses: actions/checkout@v3
 

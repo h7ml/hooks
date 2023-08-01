@@ -1,4 +1,4 @@
-name: 🔂 Surge PR Preview
+name: preview
 
 on: [pull_request_target]
 
@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [ 18.x]
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v2

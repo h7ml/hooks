@@ -1,9 +1,9 @@
-name: coverage CI
+name: coverage
 
 on: [pull_request]
 
 jobs:
-  build:
+  coverage:
     runs-on: ubuntu-latest
     strategy:
       matrix:

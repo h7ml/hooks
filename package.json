@@ -43,6 +43,7 @@
     "changelog": "conventional-changelog -n node_modules/conventional-changelog-gitmoji-config -i CHANGELOG.md -s -r 0",
     "ci": "npm run lint && npm run type-check && npm run doctor && npm run build",
     "clean": "rm -rf es lib dist coverage .dumi/tmp .eslintcache",
+    "commit": "git-cz",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "doctor": "father doctor",
@@ -76,6 +77,11 @@
       "eslint --fix",
       "prettier --parser=typescript --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
@@ -114,6 +120,10 @@
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
+  },
+  "packageManager": "pnpm@7.26.3",
+  "volta": {
+    "node": "18.0.0"
   },
   "publishConfig": {
     "access": "public",

@@ -39,7 +39,7 @@ jobs:
         run: pnpm install
 
       - name: test ✨
-      - run: pnpm run test
+        run: pnpm run test
         env:
           CI: true
           PROGRESS: none

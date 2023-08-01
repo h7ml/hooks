@@ -36,7 +36,7 @@ jobs:
         run: pnpm install
 
       - name: test ✨
-      - run: pnpm run test:coverage
+        run: pnpm run test:coverage
         env:
           CI: true
           PROGRESS: none
@@ -44,4 +44,4 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=4096
 
       - name: Upload coverage to Codecov
-      - run: bash <(curl -s https://codecov.io/bash)
+        run: bash <(curl -s https://codecov.io/bash)

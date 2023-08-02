@@ -18,7 +18,7 @@ export default () => {
 
   return (
     <>
-      <div>复制的的再好。也复制不了曾经的记忆~</div>
+      <div>复制的再好。也复制不了曾经的记忆~</div>
       <Input
         style={{ display: 'inline-block', width: 240, marginRight: 8 }}
         value={value}

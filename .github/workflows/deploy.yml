@@ -44,12 +44,6 @@ jobs:
         run: |
           pnpm run docs:build
 
-      - name: Upload hooks 🚀
-        uses: actions/upload-artifact@v3
-        with:
-          name: hooks
-          path: docs-dist
-
       - name: Deploy to gh pages  🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

@@ -1,9 +1,38 @@
-## [0.0.2](https://github.com/h7ml/hooks/compare/v0.0.1...v0.0.2) (2023-08-02)
+### Version&nbsp;0.0.2
+<sup>Released on **2023-08-02**</sup>
 
 
-### Performance Improvements
-
-* **funding:** 修改funcding赞助链接 ([32b5dcc](https://github.com/h7ml/hooks/commit/32b5dcc5c924b0d9c3247825f4b4518dacdeb911))
+<br/>
 
 
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### Version&nbsp;0.0.1
+<sup>Released on **2023-08-01**</sup>
+
+
+<br/>
+
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
 

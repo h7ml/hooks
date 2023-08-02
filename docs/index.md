@@ -1,6 +1,6 @@
 ---
 hero:
-  title: @aileen/hooks
+  title: @dext7r/hooks
   description: a npm develop template
   actions:
     - text: 快速上手

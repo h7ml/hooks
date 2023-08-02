@@ -12,7 +12,7 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@/*": ["src"],
-      "@aileen/hooks": ["src"]
+      "@dext7r/hooks": ["src"]
     }
   }
 }

@@ -1,4 +1,4 @@
-import { useSafeState } from '@aileen/hooks';
+import { useSafeState } from '@dext7r/hooks';
 import { Button } from 'antd';
 import { useEffect, useState } from 'react';
 

@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h1 align="center">Welcome to @aileen/hooks 👋</h1>
+<h1 align="center">Welcome to @dext7r/hooks 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/h7ml/hooks#readme" target="_blank">
@@ -10,13 +10,13 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/h7ml/hooks/blob/master/LICENSE" target="_blank">
-    <img alt="License: Apache--2.0" src="https://img.shields.io/github/license/h7ml/@aileen/hooks" />
+    <img alt="License: Apache--2.0" src="https://img.shields.io/github/license/h7ml/@dext7r/hooks" />
   </a>
 </p>
 
-> @aileen/hooks is a custom Hooks library for React, designed to provide a convenient and easy-to-use set of Hooks tailored for various scenarios. This library encompasses a range of common frontend request operations, including Axios, Puppeteer, Fetch, Request, and more, to facilitate efficient handling of network requests and browser interactions。
+> @dext7r/hooks is a custom Hooks library for React, designed to provide a convenient and easy-to-use set of Hooks tailored for various scenarios. This library encompasses a range of common frontend request operations, including Axios, Puppeteer, Fetch, Request, and more, to facilitate efficient handling of network requests and browser interactions。
 
-> @aileen/hooks 是一个基于 React 的自定义 Hooks 库，旨在提供一套方便、易用的针对不同场景的 Hooks 封装。该库涵盖了多种常见的前端请求操作，包括 Axios、Puppeteer、Fetch、Request 等，以帮助开发者更高效地处理网络请求和浏览器操作
+> @dext7r/hooks 是一个基于 React 的自定义 Hooks 库，旨在提供一套方便、易用的针对不同场景的 Hooks 封装。该库涵盖了多种常见的前端请求操作，包括 Axios、Puppeteer、Fetch、Request 等，以帮助开发者更高效地处理网络请求和浏览器操作
 
 ### 🏠 [Homepage](https://github.com/h7ml/hooks)
 

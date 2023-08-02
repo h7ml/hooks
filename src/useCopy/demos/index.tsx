@@ -1,4 +1,4 @@
-import { useCopy } from '@aileen/hooks';
+import { useCopy } from '@dext7r/hooks';
 import { Button, Input, message } from 'antd';
 import { useState } from 'react';
 

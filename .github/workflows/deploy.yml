@@ -66,22 +66,22 @@ jobs:
           echo the preview URL is $DEPLOY_DOMAIN
           echo "::set-output name=url::$DEPLOY_DOMAIN"
 
-  surge:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout  🚀
-        uses: actions/checkout@v3
-        with:
-          ref: gh-pages
-          fetch-depth: 0
-      - name: Deploy to surge 🚀
-        uses: dswistowski/surge-sh-action@v1
-        with:
-          domain: 'hooks.surge.sh'
-          project: './'
-          login: ${{ secrets.surge_login }}
-          token: ${{ secrets.surge_token }}
-    needs: deploy
+  # surge:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout  🚀
+  #       uses: actions/checkout@v3
+  #       with:
+  #         ref: gh-pages
+  #         fetch-depth: 0
+  #     - name: Deploy to surge 🚀
+  #       uses: dswistowski/surge-sh-action@v1
+  #       with:
+  #         domain: 'hooks.surge.sh'
+  #         project: './'
+  #         login: ${{ secrets.surge_login }}
+  #         token: ${{ secrets.surge_token }}
+  #   needs: deploy
 
   clean:
     runs-on: ubuntu-latest
@@ -107,4 +107,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           EXPIRE_TIME: '12h'
         run: python run.py
-    needs: surge
+    needs: deploy

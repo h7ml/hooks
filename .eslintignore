@@ -10,3 +10,4 @@ jest*
 /es
 /lib
 /docs
+.git/

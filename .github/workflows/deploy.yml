@@ -50,7 +50,7 @@ jobs:
           repository-name: h7ml/h7ml
           branch: gh-pages
           folder: docs-dist
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           clean: true
           single-commit: true
           git-config-name: h7ml

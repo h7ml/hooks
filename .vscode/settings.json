@@ -45,12 +45,7 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  "auto-rename-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "javascriptreact",
-    "typescriptreact"
-  ],
+  "auto-rename-tag.activationOnLanguage": ["html", "xml", "javascriptreact", "typescriptreact"],
   "cSpell.allowCompoundWords": true,
   "cSpell.ignoreWords": [
     "yalc",
@@ -72,9 +67,7 @@
     "btns"
   ],
   "cSpell.language": "en,en-US",
-  "cSpell.userWords": [
-    "yujie"
-  ],
+  "cSpell.userWords": ["yujie"],
   "cSpell.words": [
     "activeid",
     "cachedir",
@@ -198,10 +191,7 @@
             }
           },
           {
-            "scope": [
-              "entity.name.type.ts",
-              "entity.name.type.tsx"
-            ],
+            "scope": ["entity.name.type.ts", "entity.name.type.tsx"],
             "settings": {
               "foreground": "#A6E22E"
             }
@@ -239,25 +229,12 @@
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
   "eslint.codeActionsOnSave.rules": null,
   "eslint.format.enable": true,
   "eslint.options": {
-    "extensions": [
-      ".js",
-      ".jsx",
-      ".ts",
-      ".tsx",
-      ".vue"
-    ]
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
   },
   "eslint.validate": [
     "javascript",
@@ -357,19 +334,13 @@
   "less.validate": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "markdown code block": {
-    "body": [
-      "```${1:js}",
-      "$2",
-      "```"
-    ],
+    "body": ["```${1:js}", "$2", "```"],
     "description": "markdown 块级代码",
     "prefix": "code",
     "scope": "markdown"
   },
   "markdown code inline": {
-    "body": [
-      "`$1`"
-    ],
+    "body": ["`$1`"],
     "description": "markdown 行内代码",
     "prefix": "code",
     "scope": "markdown"
@@ -418,12 +389,7 @@
   "stylelint.enable": true,
   "sync.gist": "a255bb3affb6580b4bf07cdae9934fbe",
   "tabnine.experimentalAutoImports": true,
-  "tailwindCSS.experimental.classRegex": [
-    [
-      "clsx\\(([^)]*)\\)",
-      "(?:'|\"|`)([^']*)(?:'|\"|`)"
-    ]
-  ],
+  "tailwindCSS.experimental.classRegex": [["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]],
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -444,15 +410,7 @@
   },
   "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.tabs.enabled": true,
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]"],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 const useUnmountedRef = (): { readonly current: boolean } => {
   const unmountedRef = useRef<boolean>(false);

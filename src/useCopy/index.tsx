@@ -21,7 +21,7 @@ const useCopy = (props?: useCopyProps): [string | undefined, (value?: string | n
         props?.onSuccess?.(value.toString()); // Call onSuccess if provided
       } catch (err) {
         setCopyText(undefined);
-        props?.onError?.(err); // Call onError if provided
+        props?.onError?.(err as Error); // Call onError if provided
       }
     },
     [props],

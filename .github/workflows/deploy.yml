@@ -103,7 +103,7 @@ jobs:
           pip install -r requirements.txt
       - name: Clean
         env:
-          GITHUB_REPO: 'h7ml/h7ml'
+          GITHUB_REPO: 'h7ml/hooks'
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           EXPIRE_TIME: '12h'
         run: python run.py

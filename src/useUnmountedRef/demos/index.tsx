@@ -1,16 +1,15 @@
 import { useMount, useUnmount, useUnmountedRef } from '@dext7r/hooks';
-import { Button } from 'antd';
+import { Button, message } from 'antd';
 import { useState } from 'react';
-import { message } from 'antd';
 
 const Child = () => {
   const unmountedRef = useUnmountedRef();
   useMount(() => {
-    message.success('朱砂痣')
+    message.success('朱砂痣');
     console.log('初始化：', unmountedRef);
   });
   useUnmount(() => {
-    message.success('白月光')
+    message.success('白月光');
     console.log('卸载：', unmountedRef);
   });
 

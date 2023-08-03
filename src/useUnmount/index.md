@@ -8,7 +8,3 @@ description: useUnmount is a custom React Hook that executes a specified functio
 ## Default
 
 <code src="./demos/index.tsx" nopadding></code>
-
-## APIs
-
-<API></API>

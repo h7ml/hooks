@@ -1,18 +1,20 @@
 import { useMount, useUnmount, useUnmountedRef } from '@dext7r/hooks';
 import { Button } from 'antd';
 import { useState } from 'react';
+import { message } from 'antd';
 
 const Child = () => {
   const unmountedRef = useUnmountedRef();
-
   useMount(() => {
+    message.success('朱砂痣')
     console.log('初始化：', unmountedRef);
   });
   useUnmount(() => {
+    message.success('白月光')
     console.log('卸载：', unmountedRef);
   });
 
-  return <div>你看到的我，是哪一种颜色~</div>;
+  return <div>得不到的美好,总在心间挠</div>;
 };
 
 const Index = () => {

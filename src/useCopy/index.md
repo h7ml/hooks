@@ -8,7 +8,3 @@ description: The useCopy hook is a custom React hook that simplifies the process
 ## Default
 
 <code src="./demos/index.tsx" nopadding></code>
-
-## APIs
-
-<API></API>

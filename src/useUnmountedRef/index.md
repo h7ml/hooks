@@ -8,7 +8,3 @@ description: The useUnmountedRef Hook provides a reference to check if a compone
 ## Default
 
 <code src="./demos/index.tsx" nopadding></code>
-
-## APIs
-
-<API></API>

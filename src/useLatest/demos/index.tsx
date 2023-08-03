@@ -13,7 +13,7 @@ export default () => {
 
   return (
     <div>
-      <p>Count: {latestCountRef.current}</p>
+      <p>朱砂痣久难消，你是否能知道: {latestCountRef.current}</p>
       <Button onClick={handleClick}>Increment</Button>
     </div>
   );

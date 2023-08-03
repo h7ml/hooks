@@ -8,7 +8,3 @@ description: useMount is a custom React Hook that executes a provided function o
 ## Default
 
 <code src="./demos/index.tsx" nopadding></code>
-
-## APIs
-
-<API></API>

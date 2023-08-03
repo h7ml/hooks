@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { useEffect, useState } from 'react';
 
 const Child = () => {
-  const [value, setValue] = useSafeState('1');
+  const [value, setValue] = useSafeState('二选一，别选我');
 
   useEffect(() => {
     setTimeout(() => {

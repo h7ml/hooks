@@ -8,7 +8,3 @@ description: The useSafeState hook is a utility function in React that helps ens
 ## Default
 
 <code src="./demos/index.tsx" nopadding></code>
-
-## APIs
-
-<API></API>

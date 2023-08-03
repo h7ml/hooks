@@ -16,3 +16,6 @@ LICENSE
 .eslintcache
 *.lock
 yarn-error.log
+.husky
+.npmrc
+.gitattributes

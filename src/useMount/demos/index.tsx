@@ -1,15 +1,16 @@
 import { useMount } from '@dext7r/hooks';
 import { Button } from 'antd';
+import { useState } from 'react';
 
 export default () => {
+  const [message, setMessage] = useState<string>('')
   useMount(() => {
-    // 在组件挂载时执行的操作
-    // 例如初始化 Ant Design 组件或其他相关操作
-    console.log('Component mounted');
+    setMessage('人生如若初见,何事秋风悲画扇！')
   });
 
   return (
     <div>
+      {message}
       <Button>Click Me</Button>
     </div>
   );

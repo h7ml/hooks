@@ -39,10 +39,13 @@ Give a ⭐️ if this project helped you!
 
 <!-- CONTRIBUTION GROUP -->
 
-> 📊 Total: <kbd>**1**</kbd>
+> 📊 Total: <kbd>**2**</kbd>
 
 <a href="https://github.com/h7ml" title="h7ml">
   <img src="https://avatars.githubusercontent.com/u/55233292?v=4" width="50" />
+</a>
+<a href="https://github.com/Dnzzk2" title="Dnzzk2">
+  <img src="https://avatars.githubusercontent.com/u/83647184?v=4" width="50" />
 </a>
 
 <!-- CONTRIBUTION END -->

@@ -1,5 +1,7 @@
 import { defineConfig } from 'dumi';
-import { author, homepage, name, version ,description} from './package.json';
+import { featuresZh } from './config/features';
+import { author, description, name, repository, version } from './package.json';
+
 const isProduction = process.env.NODE_ENV === 'production';
 const isWin = process.platform === 'win32';
 
@@ -13,25 +15,42 @@ export default defineConfig({
     : undefined,
   themeConfig: {
     name,
-    title:name,
-    github: homepage,
-    description,
+    github: repository.url,
     editLink: true,
     lastUpdated: true,
-    logo: 'https://www.h7ml.cn/logo.png',
-    // footer: false,
+    logo: '/logo.png',
+    footer: false,
     rtl: true,
     showLineNum: true,
     nprogress: true,
     prefersColor: { default: 'auto', switch: true },
     socialLinks: {
-      github: homepage,
+      github: repository.url,
     },
     apiHeader: {
       docUrl: `{github}/tree/master/src/{atomId}/index.md`,
       match: ['/components'],
       pkg: name,
       sourceUrl: `{github}/tree/master/src/{atomId}/index.tsx`,
+    },
+    demo: {
+      lazyLoading: true,
+    },
+    hero: {
+      description,
+      actions: [
+        {
+          type: 'primary',
+          text: '开始使用',
+          link: '/guide',
+        },
+        {
+          text: 'Github',
+          link: 'https://github.com/arvinxx/dumi-theme-antd-style',
+          openExternal: true,
+        },
+      ],
+      features: featuresZh,
     },
   },
   analyze: {
@@ -60,4 +79,11 @@ export default defineConfig({
   },
   conventionLayout: true,
   html2sketch: {},
+  analytics: {
+    // google analytics 的 key (GA 4)
+    ga_v2: 'G-abcdefg',
+    // 百度统计的 key
+    baidu: 'baidu_tongji_key',
+  },
+  sitemap: { hostname: 'https://hooks.h7ml.cn' },
 });

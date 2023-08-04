@@ -1,14 +1,14 @@
 import { defineConfig } from 'dumi';
 import type { SiteThemeConfig } from 'dumi-theme-antd-style';
 import { IDumiUserConfig } from 'dumi/dist/types';
-import { featuresZh } from './config/features';
-import { author, description, name, repository, version } from './package.json';
+import { author, name, repository, version } from './package.json';
 const isProduction = process.env.NODE_ENV === 'production';
 const isWin = process.platform === 'win32';
+const logo: string = 'https://www.h7ml.cn/logo.svg';
 const themeConfig: SiteThemeConfig = {
   name,
   github: repository.url,
-  logo: '/logo.png',
+  logo,
   footer: false,
   socialLinks: {
     github: repository.url,
@@ -19,22 +19,6 @@ const themeConfig: SiteThemeConfig = {
     pkg: name,
     sourceUrl: `{github}/tree/master/src/{atomId}/index.tsx`,
   },
-  hero: {
-    description,
-    actions: [
-      {
-        type: 'primary',
-        text: '开始使用',
-        link: '/guide',
-      },
-      {
-        text: 'Github',
-        link: 'https://github.com/arvinxx/dumi-theme-antd-style',
-        openExternal: true,
-      },
-    ],
-    features: featuresZh,
-  },
 };
 const config: IDumiUserConfig = {
   styles: [
@@ -44,8 +28,6 @@ const config: IDumiUserConfig = {
     html, body { background: #0E1116; }
   }`,
   ],
-
-  locales: [{ id: 'zh-CN', name: '中文', suffix: '' }],
   codeSplitting: {
     jsStrategy: 'granularChunks',
   },
@@ -99,5 +81,6 @@ const config: IDumiUserConfig = {
     baidu: 'baidu_tongji_key',
   },
   sitemap: { hostname: 'https://hooks.h7ml.cn' },
+  favicons: ['https://www.h7ml.cn/logo.svg'],
 };
 export default defineConfig(config);

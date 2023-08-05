@@ -85,7 +85,6 @@ const config: IDumiUserConfig = {
   headScripts: [
     {
       src: '//sdk.51.la/js-sdk-pro.min.js?id=K9Jv3fShRp5JWNEa&ck=K9Jv3fShRp5JWNEa&autoTrack=true&hashMode=true',
-      async: true,
       charset: 'utf-8',
       id: 'LA_COLLECT',
     },

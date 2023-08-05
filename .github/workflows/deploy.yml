@@ -115,7 +115,7 @@ jobs:
       - name: Clean
         env:
           GITHUB_REPO: 'h7ml/hooks'
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EXPIRE_TIME: '12h'
         run: python run.py
     needs: deploy

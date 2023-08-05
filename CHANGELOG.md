@@ -1,5 +1,35 @@
 # Changelog
 
+## [Version&nbsp;0.3.0](https://github.com/h7ml/hooks/compare/v0.2.0...v0.3.0)
+<sup>Released on **2023-08-05**</sup>
+
+
+#### ✨ 新特性
+
+- Store hooks && function hooks.
+
+
+<br/>
+
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+
+
+#### What's improved
+
+* Store hooks && function hooks ([ef0a806](https://github.com/h7ml/hooks/commit/ef0a806))
+
+</details>
+
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version&nbsp;0.2.0](https://github.com/h7ml/hooks/compare/v0.1.0...v0.2.0)
 <sup>Released on **2023-08-05**</sup>
 

@@ -5,6 +5,7 @@
  * appearance: light
  */
 import { Alert, Button, Input, theme } from 'antd';
+import React from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 export default () => {

@@ -4,6 +4,7 @@
 import { useAntdTheme, useTheme } from 'antd-style';
 import { DumiSiteProvider, Highlighter } from 'dumi-theme-antd-style';
 import { omit } from 'lodash';
+import React from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 const App = () => {

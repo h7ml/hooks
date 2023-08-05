@@ -2,6 +2,7 @@
  * iframe: 600
  */
 import { DumiSiteProvider, Hero } from 'dumi-theme-antd-style';
+import React from 'react';
 import { Center } from 'react-layout-kit';
 
 export default () => (

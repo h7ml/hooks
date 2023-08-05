@@ -3,6 +3,7 @@
  * description: 自定义了暗色和亮色模式下的高亮效果
  */
 import { DumiSiteProvider, Highlighter } from 'dumi-theme-antd-style';
+import React from 'react';
 
 const text = `
 import { ReactElement, useMemo } from 'react';

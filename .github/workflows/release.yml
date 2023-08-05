@@ -10,48 +10,76 @@ on:
 jobs:
   test:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [20.x]
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Cache dependencies 📦
+        uses: actions/cache@v2
         with:
-          version: 8
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
 
-      - name: Setup Node.js environment
+      - name: Use Node.js ${{ matrix.node-version }} 🚀
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: ${{ matrix.node-version }}
 
-      - name: Install deps
+      - name: Install pnpm 🚀
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: false
+
+      - name: Install dependencies 🚀
         run: pnpm install
 
-      - name: Test
+      - name: test ✨
         run: pnpm run test
 
   release:
     needs: test
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [20.x]
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Cache dependencies 📦
+        uses: actions/cache@v2
         with:
-          version: 8
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
 
-      - name: Setup Node.js environment
+      - name: Use Node.js ${{ matrix.node-version }} 🚀
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: ${{ matrix.node-version }}
 
-      - name: Install deps
+      - name: Install pnpm 🚀
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: false
+
+      - name: Install dependencies 🚀
         run: pnpm install
 
       - name: release
-        run: pnpm run release
+        run: pnpm run release 🚀
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

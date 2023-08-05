@@ -15,6 +15,6 @@ group: 介绍
 ```bash
 pnpm install
 
-# start dumi server
+# start @dext7r/hooks server
 pnpm run start
 ```

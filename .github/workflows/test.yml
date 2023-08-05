@@ -2,29 +2,42 @@ name: test
 on: [push, pull_request]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [16.x, 18.x, 19.x, 20.x]
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Cache dependencies 📦
+        uses: actions/cache@v2
         with:
-          version: 8
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
 
-      - name: Setup Node.js environment
+      - name: Use Node.js ${{ matrix.node-version }} 🚀
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: ${{ matrix.node-version }}
 
-      - name: Install deps
+      - name: Install pnpm 🚀
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+          run_install: false
+
+      - name: Install dependencies 🚀
         run: pnpm install
 
-      - name: lint
+      - name: lint 🚀
         run: pnpm run ci
 
-      - name: Test and coverage
+      - name: Test and coverage 🚀
         run: pnpm run test:coverage
 
-      - name: Upload coverage to Codecov
+      - name: Upload coverage to Codecov 🚀
         uses: codecov/codecov-action@v3

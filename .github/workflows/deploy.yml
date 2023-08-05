@@ -15,6 +15,11 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [18.x]
     steps:
       - name: Checkout  🚀
         uses: actions/checkout@v3
@@ -22,21 +27,27 @@ jobs:
           ref: master
           fetch-depth: 0
 
-      - name: Install pnpm  🚀
-        uses: pnpm/action-setup@v2.0.1
-        id: pnpm-install
+      - name: Cache dependencies 📦
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node-version }}-
+
+      - name: Use Node.js ${{ matrix.node-version }} 🚀
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install pnpm 🚀
+        uses: pnpm/action-setup@v2
         with:
           version: 7
           run_install: false
 
-      - name: Install dependencies  🚀
-        if: steps.pnpm-cache.outputs.cache-hit != 'true'
-        run: pnpm update && pnpm install --no-frozen-lockfile
-
-      - name: Setup Node.js  🚀
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+      - name: Install dependencies 🚀
+        run: pnpm install
 
       - name: Build project  🚀
         env:

@@ -9,7 +9,7 @@ hero:
     - text: 开始
       link: /guide
     - text: hooks
-      link: /components/use-copy
+      link: /components
 features:
   - title: '江城子·乙卯正月二十日夜记梦'
     image: https://sns-img-hw.xhscdn.com/a99927df-beb7-3e43-9722-a79359af26cc?imageView2/2/w/1920/format/webp|imageMogr2/strip

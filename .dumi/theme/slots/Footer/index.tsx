@@ -101,7 +101,7 @@ export default () => {
         {
           icon: <GithubOutlined />,
           title: 'GitHub',
-          url: 'https://github.com/ant-design/antd-style',
+          url: 'https://github.com/h7ml/hooks.git',
           openExternal: true,
         },
         {
@@ -114,7 +114,7 @@ export default () => {
         {
           icon: <IssuesCloseOutlined />,
           title: '讨论',
-          url: 'https://github.com/ant-design/antd-style/issues',
+          url: 'https://github.com/h7ml/hooks/issues',
           openExternal: true,
         },
       ],
@@ -189,7 +189,9 @@ export default () => {
 
   return (
     <Footer
-      bottom={<p>&copy; {currentYear} h7ml Company. All rights reserved.</p>}
+      bottom=
+      {<p><a href="/sitemap.xml" target="_blank">站点地图</a> |&copy; {currentYear} h7ml Company. All rights reserved.</p>
+      }
       columns={footerColumns}
     />
   );

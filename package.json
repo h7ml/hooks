@@ -92,7 +92,8 @@
     "babel-plugin-import": "^1.13.8",
     "copy-to-clipboard": "^3.3.3",
     "lodash": "^4.17.21",
-    "react-layout-kit": "^1.7.0"
+    "react-layout-kit": "^1.7.0",
+    "streamsaver": "^2.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
@@ -100,6 +101,7 @@
     "@testing-library/react": "^14",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
+    "@types/streamsaver": "^2.0.1",
     "@umijs/lint": "^4.0.74",
     "@vitest/coverage-v8": "latest",
     "commitizen": "^4.3.0",

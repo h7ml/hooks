@@ -3,7 +3,6 @@
  */
 import { AntDesignOutlined } from '@ant-design/icons';
 import { ApiHeader, DumiSiteProvider } from 'dumi-theme-antd-style';
-import React from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 export default () => (

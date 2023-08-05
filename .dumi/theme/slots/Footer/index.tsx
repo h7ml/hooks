@@ -189,8 +189,13 @@ export default () => {
 
   return (
     <Footer
-      bottom=
-      {<p><a href="/sitemap.xml" target="_blank">站点地图</a> |&copy; {currentYear} h7ml Company. All rights reserved.</p>
+      bottom={
+        <p>
+          <a href="/sitemap.xml" target="_blank">
+            站点地图
+          </a>{' '}
+          |&copy; {currentYear} h7ml Company. All rights reserved.
+        </p>
       }
       columns={footerColumns}
     />

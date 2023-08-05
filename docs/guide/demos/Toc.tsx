@@ -2,7 +2,6 @@
  * iframe: 380
  */
 import { DumiSiteProvider, Toc } from 'dumi-theme-antd-style';
-import React from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 const items = [

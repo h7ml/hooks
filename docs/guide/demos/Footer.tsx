@@ -10,7 +10,6 @@ import {
   ZhihuOutlined,
 } from '@ant-design/icons';
 import { DumiSiteProvider, Footer } from 'dumi-theme-antd-style';
-import React from 'react';
 
 const footer = [
   {

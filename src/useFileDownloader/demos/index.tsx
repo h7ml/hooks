@@ -1,11 +1,10 @@
-import React from 'react';
-import { Form, Input, Button, message } from 'antd';
 import { useFileDownloader } from '@dext7r/hooks';
+import { Button, Form, Input, message } from 'antd';
 
 const FileDownloader = () => {
   const { downloadFile } = useFileDownloader();
 
-  const handleDownload = (values: { fileUrl: any; filename: any; }) => {
+  const handleDownload = (values: { fileUrl: any; filename: any }) => {
     const { fileUrl, filename } = values;
     downloadFile(fileUrl, filename || 'downloaded_file').catch((error) => {
       console.error('下载文件时出现错误：', error);
@@ -15,10 +14,16 @@ const FileDownloader = () => {
 
   return (
     <div>
-      <Form onFinish={handleDownload} initialValues={{
-        fileUrl: '/logo.png',
-        filename: 'logo.png'
-      }}>
+      <Form
+        labelCol={{ span: 8 }}
+        wrapperCol={{ span: 16 }}
+        style={{ maxWidth: 600 }}
+        onFinish={handleDownload}
+        initialValues={{
+          fileUrl: '/logo.png',
+          filename: 'logo.png',
+        }}
+      >
         <Form.Item
           name="fileUrl"
           label="文件URL"

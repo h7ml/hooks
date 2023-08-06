@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const useIdle = (timeout: number): boolean => {
   const [isIdle, setIsIdle] = useState(false);

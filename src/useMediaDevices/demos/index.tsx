@@ -1,4 +1,4 @@
-import { useMediaDevices } from '@dext7r/hooks'
+import { useMediaDevices } from '@dext7r/hooks';
 import { useEffect } from 'react';
 
 export default () => {

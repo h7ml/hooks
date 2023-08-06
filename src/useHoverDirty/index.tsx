@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 const useHoverDirty = (elementRef: React.RefObject<HTMLElement>): boolean => {
   const [isHovered, setIsHovered] = useState(false);

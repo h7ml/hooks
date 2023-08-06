@@ -1,5 +1,5 @@
+import { useEvent } from '@dext7r/hooks';
 import { Button } from 'antd';
-import { useEvent } from '@dext7r/hooks'
 import { useState } from 'react';
 
 export default () => {

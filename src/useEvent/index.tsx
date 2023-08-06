@@ -2,7 +2,11 @@ import { useEffect, useRef } from 'react';
 
 type EventCallback = (event: Event) => void;
 
-const useEvent = (eventName: string, handler: EventCallback, element: HTMLElement | Window = window): void => {
+const useEvent = (
+  eventName: string,
+  handler: EventCallback,
+  element: HTMLElement | Window = window,
+): void => {
   const savedHandler = useRef<EventCallback>();
 
   useEffect(() => {

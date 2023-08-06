@@ -14,7 +14,11 @@ export default () => {
   return (
     <>
       <h2>Battery Status</h2>
-      {batteryLevel !== null ? <div>Battery Level: {batteryLevel.toFixed(2)}%</div> : <div>Loading battery status...</div>}
+      {batteryLevel !== null ? (
+        <div>Battery Level: {batteryLevel.toFixed(2)}%</div>
+      ) : (
+        <div>Loading battery status...</div>
+      )}
     </>
   );
 };

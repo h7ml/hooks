@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
 const useHover = (elementRef: React.RefObject<HTMLElement>): boolean => {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,4 +26,4 @@ const useHover = (elementRef: React.RefObject<HTMLElement>): boolean => {
   return isHovered;
 };
 
-export default useHover
+export default useHover;

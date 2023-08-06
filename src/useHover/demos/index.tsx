@@ -1,4 +1,4 @@
-import { useHover } from '@dext7r/hooks'
+import { useHover } from '@dext7r/hooks';
 import { useRef } from 'react';
 
 export default () => {
@@ -7,7 +7,10 @@ export default () => {
 
   return (
     <>
-      <div ref={elementRef} style={{ width: 200, height: 100, background: isHovered ? 'red' : 'blue' }}>
+      <div
+        ref={elementRef}
+        style={{ width: 200, height: 100, background: isHovered ? 'red' : 'blue' }}
+      >
         {isHovered ? 'Hovering' : 'Not Hovering'}
       </div>
     </>

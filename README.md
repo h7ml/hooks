@@ -47,11 +47,11 @@ Give a ⭐️ if this project helped you!
 <a href="https://github.com/actions-user" title="actions-user">
   <img src="https://avatars.githubusercontent.com/u/65916846?v=4" width="50" />
 </a>
-<a href="https://github.com/Dnzzk2" title="Dnzzk2">
-  <img src="https://avatars.githubusercontent.com/u/83647184?v=4" width="50" />
-</a>
 <a href="https://github.com/apps/dependabot" title="dependabot[bot]">
   <img src="https://avatars.githubusercontent.com/in/29110?v=4" width="50" />
+</a>
+<a href="https://github.com/Dnzzk2" title="Dnzzk2">
+  <img src="https://avatars.githubusercontent.com/u/83647184?v=4" width="50" />
 </a>
 
 <!-- CONTRIBUTION END -->

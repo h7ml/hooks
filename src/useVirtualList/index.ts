@@ -1,4 +1,4 @@
-import { CSSProperties, OverflowY, RefObject, useMemo, useRef, useState } from 'react';
+import { CSSProperties, RefObject, useMemo, useRef, useState } from 'react';
 
 export interface UseVirtualListOptions {
   containerHeight?: number;
@@ -17,7 +17,7 @@ export interface UseVirtualListReturn<T> {
   containerProps: {
     ref: RefObject<any>;
     onScroll: () => void;
-    style: Partial<CSSProperties> & { overflowY: OverflowY };
+    style: Partial<CSSProperties> & { overflowY: 'auto' };
   };
   wrapperProps: {
     style: {

@@ -1,5 +1,4 @@
 import { defineConfig } from 'dumi';
-import { IDumiUserConfig } from 'dumi/dist/types';
 import { author, name, repository, version } from './package.json';
 const isProduction = process.env.NODE_ENV === 'production';
 const isWin = process.platform === 'win32';
@@ -33,7 +32,7 @@ const themeConfig = {
     sourceUrl: `{github}/tree/master/src/{atomId}/index.tsx`,
   },
 };
-const config: IDumiUserConfig = {
+const config = {
   styles: [
     `html, body { background: transparent;  }
 
@@ -73,7 +72,16 @@ const config: IDumiUserConfig = {
   npmClient: 'pnpm',
   publicPath: '/',
   cacheDirectoryPath: './node_modules/.cache',
-  chainWebpack(memo, { env, webpack }: any) {
+  chainWebpack(
+    memo: {
+      plugin: (arg0: string) => {
+        (): any;
+        new (): any;
+        use: { (arg0: any, arg1: { banner: string }[]): void; new (): any };
+      };
+    },
+    { env, webpack }: any,
+  ) {
     memo.plugin('copyright').use(webpack.BannerPlugin, [
       {
         banner: `Version: ${version} - © ${new Date().getFullYear()} ${author.name} <${
@@ -102,5 +110,5 @@ const config: IDumiUserConfig = {
       id: 'LA_COLLECT',
     },
   ],
-};
+} as any;
 export default defineConfig(config);

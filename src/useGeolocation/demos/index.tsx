@@ -6,7 +6,7 @@ export default () => {
 
   useEffect(() => {
     if (error) {
-      console.error('Error fetching geolocation:', error.message);
+      console.error('Error fetching geolocation:', error);
     } else {
       console.log('Latitude:', latitude);
       console.log('Longitude:', longitude);
@@ -16,7 +16,7 @@ export default () => {
   return (
     <>
       <h2>Geolocation Data</h2>
-      {error ? <div>Error: {error.message}</div> : null}
+      {error ? <div>Error: {error}</div> : null}
       <div>Latitude: {latitude}</div>
       <div>Longitude: {longitude}</div>
     </>

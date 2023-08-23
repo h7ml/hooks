@@ -1,14 +1,27 @@
 import { defineConfig } from 'dumi';
-import type { SiteThemeConfig } from 'dumi-theme-antd-style';
 import { IDumiUserConfig } from 'dumi/dist/types';
 import { author, name, repository, version } from './package.json';
 const isProduction = process.env.NODE_ENV === 'production';
 const isWin = process.platform === 'win32';
 const logo: string = 'https://www.h7ml.cn/logo.svg';
-const themeConfig: SiteThemeConfig = {
+const themeConfig = {
   name,
   github: repository.url.split('.git')[0],
   logo,
+  nav: [
+    {
+      link: '/guide',
+      title: '起步',
+    },
+    {
+      title: 'Hooks',
+      link: '/components',
+    },
+    {
+      title: '更新日志',
+      link: '/changelog',
+    },
+  ],
   footer: false,
   socialLinks: {
     github: repository.url.split('.git')[0],

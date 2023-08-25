@@ -9,12 +9,16 @@ const themeConfig = {
   logo,
   nav: [
     {
-      link: '/guide',
       title: '起步',
+      link: '/guide',
     },
     {
       title: 'Hooks',
-      link: '/components',
+      link: '/hooks',
+    },
+    {
+      title: 'Utils',
+      link: '/utils',
     },
     {
       title: '更新日志',
@@ -44,13 +48,20 @@ const config = {
     jsStrategy: 'granularChunks',
   },
   themeConfig,
+  resolve: {
+    // 设置横向导航栏
+    atomDirs: [
+      { type: 'hooks', dir: 'src/hooks' },
+      { type: 'utils', dir: 'src/utils' },
+    ],
+  },
   outputPath: 'docs-dist',
   apiParser: isProduction ? {} : false,
-  resolve: isProduction
-    ? {
-        entryFile: './src/index.ts',
-      }
-    : undefined,
+  // resolve: isProduction
+  //   ? {
+  //       entryFile: './src/index.ts',
+  //     }
+  //   : undefined,
   analyze: {
     enable: true,
     analyzerPort: 8888,

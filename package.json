@@ -127,7 +127,7 @@
     "react-dom": "^18.2.0",
     "semantic-release": "^22",
     "semantic-release-config-gitmoji": "^1",
-    "stylelint": "^15.10.3",
+    "stylelint": "^16.0.1",
     "typescript": "^5.1.6",
     "vitest": "latest"
   },

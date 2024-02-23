@@ -113,7 +113,7 @@
     "cz-git": "^1.7.1",
     "dotenv-cli": "^7.3.0",
     "dumi": "^2.2.6",
-    "dumi-theme-antd-style": "^0.29.4",
+    "dumi-theme-antd-style": "^0.30.0",
     "eslint": "^8.47.0",
     "father": "^4.3.1",
     "husky": "^9.0.5",

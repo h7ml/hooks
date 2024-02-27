@@ -105,7 +105,7 @@
     "@umijs/lint": "^4.0.76",
     "@vitest/coverage-v8": "latest",
     "commitizen": "^4.3.0",
-    "commitlint": "^18",
+    "commitlint": "^19",
     "commitlint-config-gitmoji": "^2",
     "concurrently": "^8",
     "conventional-changelog-gitmoji-config": "^1",

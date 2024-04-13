@@ -436,7 +436,6 @@
   "window.menuBarVisibility": "classic",
   "window.zoomLevel": 3,
   "winopacity.opacity": 240,
-  "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
       "activityBar.background": "#221F22",
@@ -533,5 +532,9 @@
   },
   "[properties]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   }
 }

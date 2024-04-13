@@ -66,8 +66,8 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           clean: true
           single-commit: true
-          git-config-name: h7ml
-          git-config-email: h7ml@qq.com
+          git-config-name: github-actions[bot]
+          git-config-email: action@h7ml.cn
           commit-message: '[Bot] Deploy to GitHub Pages'
       - name: Upload surge service and generate preview URL 🚀
         id: deploy

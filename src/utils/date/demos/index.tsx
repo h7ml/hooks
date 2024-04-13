@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 export default () => {
   const [isYesterdayDate, setIsYesterdayDate] = useState<boolean>(false);
   useEffect(() => {
-    const flag = isYesterday(new Date())
+    const flag = isYesterday(new Date());
     setIsYesterdayDate(flag);
   }, []);
 

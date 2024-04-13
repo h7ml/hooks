@@ -56,7 +56,7 @@ const config = {
     ],
   },
   outputPath: 'docs-dist',
-  apiParser: isProduction ? {} : false,
+  // apiParser: isProduction ? {} : false,
   // resolve: isProduction
   //   ? {
   //       entryFile: './src/index.ts',

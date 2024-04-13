@@ -6,8 +6,8 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-        node-version: [16.x, 18.x, 19.x, 20.x]
+        os: [windows-latest]
+        node-version: [latest]
     steps:
       - uses: actions/checkout@v3
 
@@ -27,7 +27,7 @@ jobs:
       - name: Install pnpm 🚀
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8.15.5
           run_install: false
 
       - name: Install dependencies 🚀

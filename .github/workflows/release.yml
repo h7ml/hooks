@@ -1,12 +1,6 @@
-name: Release
+name: release
 on:
-  push:
-    branches:
-      - master
-      - alpha
-      - beta
-      - rc
-
+  workflow_dispatch:
 jobs:
   test:
     name: Test

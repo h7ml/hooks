@@ -125,7 +125,7 @@
     "prettier-plugin-packagejson": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "semantic-release": "^23",
+    "semantic-release": "^24",
     "semantic-release-config-gitmoji": "^1",
     "stylelint": "^16.3.1",
     "typescript": "^5.4.5",

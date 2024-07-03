@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_dext7r_hooks=self.webpackChunk_dext7r_hooks||[]).push([[5111],{87200:function(a,n,_){_.r(n);var s=_(7045),E=_(69556),d=_(90142),D=_(95440),t=_(52676);n.default=function(){return(0,t.jsx)(s.Z,{children:(0,t.jsx)(d.D,{padding:24,children:(0,t.jsx)(E.Z,{items:D.antdStyleItems})})})}}}]);

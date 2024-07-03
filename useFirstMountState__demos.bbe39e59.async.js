@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_dext7r_hooks=self.webpackChunk_dext7r_hooks||[]).push([[6840],{12340:function(_,t,s){s.r(t);var e=s(47704),o=s(61130),n=s(52676);t.default=function(){var r=(0,e.Z)();return(0,n.jsxs)(n.Fragment,{children:[r&&(0,n.jsx)(o.Z,{message:"This is the first render!",type:"info"}),(0,n.jsx)("div",{children:"Component content goes here."})]})}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_dext7r_hooks=self.webpackChunk_dext7r_hooks||[]).push([[4104],{60430:function(u,r,e){e.r(r);var d=e(75069),o=e(75271),n=e(52676);r.default=function(){var t=(0,o.useRef)(null),s=(0,d.Z)(t);return(0,n.jsx)(n.Fragment,{children:(0,n.jsx)("div",{ref:t,style:{width:200,height:100,background:s?"red":"blue"},children:s?"Hovering":"Not Hovering"})})}}}]);

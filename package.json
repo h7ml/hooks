@@ -100,7 +100,7 @@
     "@commitlint/config-conventional": "^19.1.0",
     "@testing-library/react": "^16",
     "@types/react": "^18.2.77",
-    "@types/react-dom": "^18.2.25",
+    "@types/react-dom": "^19.1.1",
     "@types/streamsaver": "^2.0.4",
     "@umijs/lint": "^4.1.9",
     "@vitest/coverage-v8": "latest",
